@@ -1,0 +1,749 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --instagram-color: linear-gradient(rgb(68, 3, 85),rgb(185, 8, 97),rgb(206, 12, 6),rgb(226, 187, 59));
+    --linkdin-color: rgb(13, 68, 119);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*------------------Navigation Bar-----------------*/
+
+.navbar{
+    display: flex;
+    width: 100%;
+    background: rgb(107, 47, 163);
+    padding: 8px;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar .title{
+    font-size: 1.7rem;
+    color: beige;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 1px gray;
+    cursor: default
+}
+
+.bars .openbtn{
+    border: 2px solid rgb(211, 211, 159);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: beige;
+    padding: 3px 8px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.bars .openbtn:hover{
+    background: beige;
+    color: black;
+}
+
+/*--------------------------Side bar-----------------------*/
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 0;
+    height: 22rem;
+    background-color: rgb(130, 79, 179);
+    top: 0;
+    right: 0;
+    z-index: 2;
+    position: fixed;
+}
+
+.sidebar .closebtn{
+    text-align: right;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: beige;
+}
+
+.sidebar .closebtn:hover{
+    color: rgb(231, 76, 76);
+}
+
+.sidebar a.bar{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    color: beige;
+}
+
+.sidebar a.bar:hover{
+    color: yellowgreen;
+}
+
+/*------------------------Home Page-----------------------*/
+
+.slideimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid beige;
+    margin-top: 5.5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.slideimage img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.caption, .enquire{
+    position: absolute;
+    margin: 5rem;
+}
+
+.caption p{
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+.enquire p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+    margin-top: 60px;
+    cursor: default;
+}
+
+.btn{
+    position: absolute;
+    margin-top: 8.8rem;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.btn a:hover{
+    background-color: green;
+}
+
+/*-------------------------------------About Page----------------------------------*/
+
+.about{
+    margin: 2rem 2.7rem;
+}
+
+.page{
+    margin-bottom: 0.9rem;
+}
+
+.page p{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: blueviolet;
+    text-align: center;
+    cursor: default;
+}
+
+.about .info p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+}
+
+/*------------------------------------Sub About page------------------------------*/
+
+.about .about-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.about-container .about-info{
+    box-shadow: 3px 2px 5px 2px rgb(146, 144, 144);
+    background-color: rgb(173, 143, 201);
+    width: 30%;
+    transition: .3s ease;
+}
+
+.about-container .about-info:hover{
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+.center{
+    text-align: center;
+    margin-top: 0.9rem;
+}
+
+.about-info .center i{
+    transform: rotate(7deg);
+    font-size: 1.9rem;
+}
+
+.about-info header{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(39, 13, 65);
+    margin-top: 0.8rem;
+}
+
+.about-info .box{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-info .box p{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(19, 10, 27);
+    font-size: 1.1rem;
+}
+
+/*---------------------------------------Features page--------------------------------------*/
+
+.feature-container{
+    background-color: rgb(241, 250, 223);
+    margin-bottom: 1.9rem;
+}
+
+.feature-container .row1{
+    margin-top: 1.7rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-box{
+    width: 30%;
+    margin: 1.5rem 0;
+}
+
+.feature-box .center i{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: rgb(49, 12, 47);
+}
+
+.feature-box .center i:hover{
+    font-size: 3.6rem;
+}
+
+.feature-box header{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2e2e2e;
+    font-weight: 550;
+    font-size: 1.5rem;
+}
+
+.feature-box .sub-line{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #646464;
+    font-size: 1.07rem;
+}
+
+/*-------------------------------------------Courses Page-------------------------------------*/
+
+.course-container{
+    margin-top: 1.5rem;
+    padding: 0 1.9rem;
+}
+
+.sub-course{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course-box{
+    width: 30%;
+    position: relative;
+}
+
+.course-box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#c4, #c5, #c6{
+    margin-top: 2rem;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(165, 143, 187);
+    transition: .7s ease;
+    opacity: 0;
+}
+
+.overlay .text{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(33, 8, 44);
+}
+
+.course-box:hover .overlay{
+    opacity: 1;
+}
+
+.know-more{
+    margin-top: 0.9rem;
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.know-more >div{
+    background-color: rgb(124, 21, 221);
+    cursor: pointer;
+}
+.know-more >div:hover{
+    background-color: rgb(81, 12, 146);
+}
+
+.know-more >div> p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*----------------------------------------Contact Page-------------------------------------*/
+
+.contact-container{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-container form{
+    width: 50%;
+}
+
+.contact-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-div .contact-left{
+    width: 40%;
+}
+.contact-div .contact-right{
+    width: 50%;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 0.8rem 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: black;
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 4px solid grey;
+    box-shadow: 1px 2px 7px rgb(171, 125, 214);
+  }
+
+input[type=submit]{
+    width: 95%;
+    padding: 12px;
+    cursor: default;
+    transform: translate(2.7%, 20%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(142, 84, 197);
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s ease;
+}
+
+input[type=submit]:hover{
+    background-color: darkgreen;
+}
+
+.contact-info{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(222, 210, 233);
+    border: none;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.contact-info .info-box{
+    width: 100%;
+    display: flex;
+    margin-top: 1.3rem;
+    margin-bottom: 2.6rem;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.icons img{
+    width: 2.6rem;
+}
+
+.details p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+}
+
+/*-----------------------------------------------Footer Page------------------------------------------*/
+
+.footer{
+    margin-top: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.footer img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer-overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgb(1, 9, 24);
+    opacity: .95;
+}
+
+.social-icons{
+    transform: translate(0, -90px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook, .github, .linkdin, .twitter, .whatsapp, .instagram{
+    color: grey;
+    border: 1px solid gray;
+    margin-right: 10px;
+    padding: 6px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.facebook:hover{
+    background: linear-gradient(rgb(41, 38, 189), rgb(4, 9, 75));
+    border: none;
+    color: white;
+}
+
+.github:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.linkdin:hover{
+    border: none;
+    background-color: var(--linkdin-color);
+    color: white;
+}
+
+.twitter:hover{
+    border: none;
+    background-color: white;
+    color: rgb(7, 66, 121);
+}
+
+.instagram:hover{
+    border: none;
+    background: var(--instagram-color);
+    color: white;
+}
+
+.whatsapp:hover{
+    border: none;
+    background-color: rgb(17, 129, 35);
+    color: white;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(0, 10, 29);
+}
+
+.footer-bottom p{
+    color: gray;
+    width: 100%;
+    padding: 10px 0;
+    margin-left: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    cursor: default;
+}
+.footer-bottom p::first-line{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+}
+
+.footer-bottom .bottom-right{
+    margin-right: 100px;
+}
+.bottom-right a{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.1rem;
+}
+.bottom-right a:hover{
+    color: rgba(245, 245, 245, 0.836);
+}
+
+/*-------------------------------------------For Mobile Phones--------------------------------------*/
+
+@media screen and (max-width: 600px){
+    .navbar .title{
+        font-size: 1.3rem;
+    }
+    .bars .openbtn{
+        padding: 2px 7px;
+    }
+    .sidebar a.bar{
+        font-size: 1.4rem;
+    }
+    .slideimage{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .caption p{
+        font-size: 1rem;
+    }
+    .enquire p{
+        font-size: 0.8rem;
+        padding-top: 10px;
+        display: none;
+    }
+    .btn a{
+        padding: 10px;
+    }
+
+    /*--------------------------------------About------------------------------------*/
+
+    .page p{
+        font-size: 1.7rem;
+    }
+    .about .info p{
+        font-size: 1.2rem;
+    }
+    .about .about-container{
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+    .about-container .about-info{
+        width: 100%;
+        margin-top: 1.7rem;
+    }
+
+    /*---------------------------------------Features----------------------------------------*/
+
+    .feature-box .center i{
+        font-size: 2.6rem;
+    }
+    .feature-box .center i:hover{
+        font-size: 3rem;
+    }
+    .feature-box header{
+        font-size: 1.14rem;
+    }
+    .feature-box .sub-line{
+        font-size: 0.95rem;
+    }
+
+    /*----------------------------------------Courses-----------------------------------*/
+
+    .course-container{
+        margin-top: 0rem;
+        margin-bottom: 1.2rem;
+    }
+    .sub-course{
+        flex-direction: column;
+    }
+    .course-box{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .know-more{
+        padding: 0;
+    }
+    .know-more >div>p{
+        padding: 6px;
+    }
+
+    /*----------------------------------------Contact------------------------------------*/
+
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-container form{
+        width: 100%;
+    }
+    .contact-info{
+        width: 100%;
+        margin-top: 1.5rem;
+        
+    }
+
+    /*------------------------------------------Footer-------------------------------------*/
+
+    .social-icons{
+        transform: translate(0, 50%);
+    }
+    .facebook, .github, .linkdin, .twitter, .whatsapp, .instagram{
+        font-size: 15px;
+        padding: 4px 8px;
+    }
+
+    .footer-bottom p{
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-bottom .bottom-right{
+        margin: 0;
+    }
+    .bottom-right a{
+        font-size: 0.95rem;
+    }
+}
+
+/*----------------------------------------------For Tab--------------------------------------*/
+
+@media screen and (max-width: 992px){
+
+    .navbar .title{
+        font-size: 1.65rem;
+    }
+    .bars .openbtn{
+        padding: 2px 7px;
+    }
+    .sidebar a.bar{
+        font-size: 1.4rem;
+    }
+    .slideimage{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .caption p{
+        font-size: 1.5rem;
+    }
+    .enquire p{
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+    .btn a{
+        padding: 10px;
+    }
+
+ /*----------------------------------------Contact------------------------------------*/
+
+ .contact-container{
+    flex-direction: column;
+}
+.contact-container form{
+    width: 100%;
+}
+.contact-info{
+    width: 100%;
+    margin-top: 1.5rem;
+    
+}
+
+/*------------------------------------------Footer-------------------------------------*/
+
+.social-icons{
+    transform: translate(0, 10%);
+}
+.facebook, .github, .linkdin, .twitter, .whatsapp, .instagram{
+    font-size: 18px;
+    padding: 4px 8px;
+}
+
+.footer-bottom p{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom .bottom-right{
+    margin: 0;
+}
+.bottom-right a{
+    font-size: 0.95rem;
+}
+
+}
+
+
